@@ -30,9 +30,8 @@
               - name: MongoDB in GitHub Actions
                 uses: supercharge/mongodb-github-action@1.10.0
                 with:
-                  mongodb-dbpath: ./data/db
-
-              - run: npm start
+                  mongodb-db: ./data/db
 
               - run: npm i
+              - run: npm start
               - run: npm test
